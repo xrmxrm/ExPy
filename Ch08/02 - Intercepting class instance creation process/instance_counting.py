@@ -4,7 +4,7 @@ class InstanceCountingClass:
 
     def __new__(cls, *args, **kwargs):
         instance = super().__new__(cls)
-        instance.number = cls.created
+        instance.number = cls.created + 1
         cls.created += 1
 
         return instance

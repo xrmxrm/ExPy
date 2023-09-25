@@ -8,7 +8,7 @@ import random
 
 
 async def print_number(number):
-    await asyncio.sleep(0)
+    await asyncio.sleep(random.random())
     print(number)
 
 

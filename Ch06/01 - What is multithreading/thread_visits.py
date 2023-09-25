@@ -6,9 +6,9 @@ thread_visits = 0
 def visit_counter():
     global thread_visits
     for i in range(100_000):
-        # value = thread_visits
-        # thread_visits = value + 1
-        thread_visits += 1
+        value = thread_visits
+        thread_visits = value + 1
+        # thread_visits += 1
 
 
 if __name__ == "__main__":
